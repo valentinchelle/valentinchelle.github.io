@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+{%- include header.html -%}
+
+
+  <section class="section">
+    <div class="container is-very-narrow">
+      <article
+        class="post h-entry"
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
+        <header class="post-header">
+          <div class="columns is-multiline is-mobile">
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <div class="centered">
+                <img
+                  class="img-before-article"
+                  src="/assets/thumbnails/{{ page.thumbnail }}"
+                />
+              </div>
+            </div>
+
+            <div
+              class="column is-12-mobile is-half-tablet is-two-third-desktop"
+            >
+              <h1 class="post-title p-name" itemprop="name headline">
+                {{ page.title | escape }}
+              </h1>
+              <p class="post-meta">
+                <time
+                  class="dt-published"
+                  datetime="{{ page.date | date_to_xmlschema }}"
+                  itemprop="datePublished"
+                >
+                  {%- assign date_format = site.minima.date_format | default:
+                  "%b %-d, %Y" -%}
+                  {{ page.date | date: date_format }}
+                </time>
+                {%- if page.author -%} •
+                <span
+                  itemprop="author"
+                  itemscope
+                  itemtype="http://schema.org/Person"
+                  ><span class="p-author h-card" itemprop="name">{{
+                    page.author
+                  }}</span></span
+                >
+                {%- endif -%}
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%}
+        {%- endif -%}
+
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+    {% for tag in page.tags %}
+    <tag class="tag">{{ tag }}</tag>
+    {% endfor %}
+  </section>
+
+  {% include disqus_comments.html %}
+      </article>
+    </div>
+
+
+</div>

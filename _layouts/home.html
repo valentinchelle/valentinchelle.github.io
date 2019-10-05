@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  <section id="intro_section" class="section is-medium">
+    <div class="container is-narrow">
+      <div class="image_round centered">
+        <img src="/assets/profilepic.jpg" alt="" />
+      </div>
+      <div class="centered">
+        <h2 class="widget-title">Hi ! I'm {{ site.firstname }}</h2>
+      </div>
+      <div class="centered" id="subtitle_homepage">
+        {{ site.text_under_title_homePage }}
+      </div>
+
+      <div id="tags_list" class="centered">
+        <span class="tag">TensorFlow</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Spark</span>
+        <span class="tag">ReactJs</span>
+        <span class="tag">NodeJs</span>
+      </div>
+    </div>
+  </section>
+  <section
+    id="projects_section"
+    class="section is-medium section-with-background"
+  >
+    <div class="centered">
+      <h2 class="widget-title">My Recent Work</h2>
+    </div>
+
+    <div class="container is-narrow">
+      <div class="project-grid">
+        <div class="columns is-multiline is-mobile">
+          {%- for post in site.projects -%} {% include
+          components/project_thumbnail.html post=post %} {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ content }}
+
+  <section id="articles_section" class="section is-medium">
+    <div class="centered">
+      <h2 class="widget-title">My Last Articles</h2>
+    </div>
+
+    {%- if site.posts.size > 0 -%}
+    <div class="container is-narrow">
+      <div class="article-grid">
+        <div class="columns is-multiline is-mobile">
+          {%- for post in site.posts -%} {% include
+          components/article_thumbnail.html post=post %} {%- endfor -%}
+        </div>
+      </div>
+    </div>
+
+    <div class="centered">
+      <a class="btn_grey ">View All</a>
+    </div>
+
+    {%- endif -%}
+  </section>
+
+  <section class="section join-me section-with-background  has-text-centered">
+    <div class="container is-narrow">
+      <div class="box">
+        <div class="columns level">
+          <div class="column level-item">
+            <h1 class="title">Start a project</h1>
+          </div>
+          <div class="column level-item">
+            <p>
+              Interested in working together? We should queue up a chat. I’ll
+              buy the coffee.
+            </p>
+          </div>
+          <div class="column level-item">
+            <a
+              class="button is-primary is-outlined is-rounded is-medium"
+              href="/project-planner"
+              >Let's do this</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

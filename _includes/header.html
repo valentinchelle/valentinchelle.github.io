@@ -1,0 +1,68 @@
+<header>
+
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<a
+  role="button"
+  class="navbar-burger"
+  data-target="site-navigation"
+  aria-label="menu"
+  aria-expanded="false"
+>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+
+<div class="menu-wrap ps navbar-menu">
+  <nav
+    id="site-navigation"
+    class="main-navigation"
+    itemscope=""
+    itemtype="http://schema.org/SiteNavigationElement"
+  >
+    <ul id="primary-menu" class="nav-menu">
+      <li
+        id="menu-item-17"
+        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-17"
+      >
+        <a href="http://chellestudio.fr/">Home</a>
+      </li>
+      <li
+        id="menu-item-18"
+        class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-18"
+      >
+        <a href="http://chellestudio.fr/blog/">Blog</a>
+      </li>
+      <li
+        id="menu-item-19"
+        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"
+      >
+        <a href="http://chellestudio.fr/portfolios/">Portfolios</a>
+      </li>
+    </ul>
+  </nav>
+</div></header>
+
+<script>
+    $(document).ready(function() {
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+      });
+    });
+    // detect click out of menu
+    $(document).mouseup(function(e) 
+{
+    var container = $(".navbar-menu");
+    var button = $(".navbar-burger");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && !button.is(e.target) && button.has(e.target).length === 0 && container.has(e.target).length === 0 && container.hasClass("is-active")) 
+    {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    }
+});
+  </script>
