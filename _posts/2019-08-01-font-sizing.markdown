@@ -1,10 +1,10 @@
 ---
 title: Automatic Font Size Fitting
 layout: post
-date: "2019-08-01 11:17:20 -0700"
+date: '2019-08-01 11:17:20 -0700'
 tags:
-  - UI
-  - Design
+- UI
+- Design
 thumbnail: cover_font_fitting.svg
 ---
 
@@ -21,9 +21,11 @@ Who said you don’t need math to create UIs ?
 
 This part explains the different constraints and how we can deduce the font size from the given data. We want to adjust the font size automatically for a given question and given dimensions of a container.
 
-width : the fixed width of the container of the question
-height : the fixed height of the container of the question
-number of letters : the length of the question
+* **width** : the fixed width of the container of the question
+* **height** : the fixed height of the container of the question
+* **number** of **letters**  : the length of the question
+
+
 These two equations sum up the idea of the automatic fitting system.
 ![](/assets/article_pic/font-sizing/formula1.png)
 
