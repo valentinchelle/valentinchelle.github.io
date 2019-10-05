@@ -18,6 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+url: valentinchelle.github.io
+   baseurl: /
+
 title: Valentin Chelle
 firstname: Valentin
 text_under_title_homePage: I have spent the past ten years imagining, prototyping and producing new ideas. I have developed several projects and learnt a lot of things, see for yourself !
