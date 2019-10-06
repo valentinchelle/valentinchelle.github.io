@@ -6,14 +6,13 @@
     />
     <figcaption>
       <h1 class="title is-size-5 is-size-4-widescreen">
-        {{ include.post.title | escape }}
+        {{ include.post.short_description | escape }}
       </h1>
       <a
         class="button is-primary is-outlined is-rounded"
         href="{{ post.url | relative_url }}"
-        target="_blank"
-        ><span>Learn more</span></a
-      >
+        ><span>Learn more</span>
+      </a>
     </figcaption>
     <div class="overlay"></div>
   </figure>

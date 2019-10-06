@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+{%- include header.html -%}
+<br />
+<div class="container is-narrow">
+  <section class="section contact-section is-small">
+    <div class="container is-narrow">
+      <div class="columns is-multiline is-mobile is-vcentered">
+        <div class="column is-12-mobile is-half-tablet is-vcentered">
+          <div class="widget-title">Let's work together !</div>
+          <p class="subtitle">
+            You have a project and you need someone who rocks in your team?
+            <br />If you need help on the design, the front end developement for
+            apps or websites or even on the backend development I am the best
+            for it. Maybe you are looking for a Data Scientist or a Machine
+            Learning Engineer, and in that case, I can also help you !
+          </p>
+        </div>
+        <div class="column is-12-mobile is-half-tablet is-vcentered">
+          <form
+            action="https://formspree.io/valentin.chelle@hotmail.fr"
+            method="POST"
+          >
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" name="Name" placeholder="" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" name="Email" type="email" placeholder="" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Type of Project</label>
+              <div class="control">
+                <div class="select">
+                  <select name="Project">
+                    <option>Website</option>
+                    <option>App</option>
+                    <option>Design</option>
+                    <option>Machine Learning/ Data Science</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" name="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control centered">
+                <button class="is-link btn_grey">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br />
+</div>

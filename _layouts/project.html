@@ -31,16 +31,9 @@ layout: default
               <h1 class="post-title p-name" itemprop="name headline">
                 {{ page.title | escape }}
               </h1>
+              <h3> {{ page.short_description | escape }}</h3>
               <p class="post-meta">
-                <time
-                  class="dt-published"
-                  datetime="{{ page.date | date_to_xmlschema }}"
-                  itemprop="datePublished"
-                >
-                  {%- assign date_format = site.minima.date_format | default:
-                  "%b %-d, %Y" -%}
-                  {{ page.date | date: date_format }}
-                </time>
+                
                 {%- if page.author -%} •
                 <span
                   itemprop="author"
@@ -51,11 +44,18 @@ layout: default
                   }}</span></span
                 >
                 {%- endif -%}
-              </p>
+                </p>
             </div>
           </div>
+          {%- if page.link -%}
+          <div class="centered button_under_header">
+                <a class="btn_grey" href="{{
+                    page.link
+                  }}">Visit Website</a>
+            </div>
+            {%- endif -%}
         </header>
-
+    </br />
         <div class="post-content e-content" itemprop="articleBody">
           {{ content }}
         </div>
