@@ -34,14 +34,14 @@ layout: default
               <h3> {{ page.short_description | escape }}</h3>
               <p class="post-meta">
                 
-                {%- if page.author -%} •
+                {%- if page.time_to_read -%} •
                 <span
                   itemprop="author"
                   itemscope
                   itemtype="http://schema.org/Person"
                   ><span class="p-author h-card" itemprop="name">{{
-                    page.author
-                  }}</span></span
+                    page.time_to_read
+                  }} read</span></span
                 >
                 {%- endif -%}
                 </p>

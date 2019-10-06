@@ -153,7 +153,8 @@ a.title-card {
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
-  figure:hover img {
+  figure:hover img,
+  figure:active img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
@@ -190,12 +191,15 @@ a.title-card {
     border-width: 2px;
     color: #fff;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: #293347;
     }
   }
   figure:hover .overlay,
-  figure:hover figcaption {
+  figure:hover figcaption,
+  figure:active .overlay,
+  figure:active figcaption {
     opacity: 1;
   }
   .overlay {
@@ -460,7 +464,8 @@ pre.highlight {
 }
 
 article img {
-  max-height: 500px;
+  max-height: 300px;
+  padding: 10px;
   /* width: 100%; */
 
   margin: auto;
@@ -505,7 +510,8 @@ code {
   .btn_grey {
     background-color: #d3d3d3;
     color: #fff;
-    &:hover {
+    &:hover,
+    &:active {
       background-color: #979797;
     }
   }
