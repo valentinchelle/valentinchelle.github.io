@@ -2,16 +2,18 @@
 title: My Overalls
 layout: project
 short_description: E-commerce Website and Automatized Marketing
-date: '2019-09-29 11:17:20 -0700'
+date: "2019-09-29 11:17:20 -0700"
 thumbnail: myoveralls.jpg
 link: https://shopmyoveralls.com/
 tags:
-- web
-- e-commerce
-- marketing
+  - web
+  - e-commerce
+  - marketing
+comments: false
 ---
 
-Here are the key performance metrics (evaluating the website and the marketing) two months after my first line of code : 
+Here are the key performance metrics (evaluating the website and the marketing) two months after my first line of code :
+
 <table>
 <colgroup>
 <col width="50%" />

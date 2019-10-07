@@ -2,17 +2,18 @@
 title: Chelle Studio
 layout: project
 short_description: App & Web Creation Agency
-date: '2019-09-29 11:17:20 -0700'
+date: "2019-09-29 11:17:20 -0700"
 categories: jekyll update
 thumbnail: chellestudiologo.jpg
 link: http://chellestudio.fr
-comment: false
+comments: false
 tags:
-- web
-- agency
+  - web
+  - agency
 ---
 
-Most of the projects are under my studio's name : Chelle Studio. 
+Most of the projects are under my studio's name : Chelle Studio.
+
 <table>
 <colgroup>
 <col width="50%" />

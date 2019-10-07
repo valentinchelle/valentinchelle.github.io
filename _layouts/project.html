@@ -60,19 +60,16 @@ layout: default
           {{ content }}
         </div>
 
+ 
+        {% for tag in page.tags %}
+        <tag class="tag">{{ tag }}</tag>
+        {% endfor %}<br />
+    
+    
         {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%}
         {%- endif -%}
-
-        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-
-    {% for tag in page.tags %}
-    <tag class="tag">{{ tag }}</tag>
-    {% endfor %}
-  </section>
-
-  {% include disqus_comments.html %}
-      </article>
-    </div>
-
+      </section>
+          </article>
+        </div>
 
 </div>
