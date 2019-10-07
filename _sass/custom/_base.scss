@@ -79,6 +79,11 @@ h6 {
   padding: 4px;
   color: #676767;
   background: $accent-color-3;
+
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: #b9b8b8;
+  }
 }
 
 section {
@@ -220,8 +225,6 @@ a.title-card {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    &:hover {
-    }
   }
 }
 
@@ -356,6 +359,10 @@ article {
   }
 }
 .navbar-burger {
+  border-radius: 50px;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
   z-index: 100;
   @media screen and (min-width: 1024px) {
     display: block;
@@ -442,6 +449,9 @@ article {
 }
 
 .site-title {
+  position: absolute;
+  left: 1.5rem;
+  top: 1rem;
   padding-left: 20px;
 
   padding-right: 20px;
@@ -527,4 +537,7 @@ article ul {
 }
 #articles_section {
   padding-bottom: 9rem;
+}
+header {
+  height: 4rem;
 }
