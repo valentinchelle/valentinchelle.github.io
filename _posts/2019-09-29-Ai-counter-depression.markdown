@@ -1,9 +1,9 @@
 ---
 title: Using AI to counter depression
 layout: post
-date: '2019-09-29 11:17:20 -0700'
+date: "2019-09-29 11:17:20 -0700"
 tags:
-- Deep Learning
+  - Deep Learning
 thumbnail: feeling_down_cover.svg
 extract: A method to counter depression with deep learning models.
 time_to_read: 10 min
@@ -152,7 +152,7 @@ The depression detector tries to detect whether or not a user is going through a
 
 ## Building a Dataset of Emotions
 
-> For those of you who are not familiar with AI, such models to predict or classify need to be trained. It means that we have to find the right parameters that will give the right prediction. To do that, we need some data on which we can first train the models and try to optimize their performances. For instance, to train the emotion classifier, we need a list of numerous tweets associated to a class of emotion. It means we need a list of happy tweets, a list of sad tweets, etc.  All these lists are then gathered to form the training dataset. Once the model is trained, we can then apply it to classify tweets for which the emotion is not given.
+> For those of you who are not familiar with AI, such models to predict or classify need to be trained. It means that we have to find the right parameters that will give the right prediction. To do that, we need some data on which we can first train the models and try to optimize their performances. For instance, to train the emotion classifier, we need a list of numerous tweets associated to a class of emotion. It means we need a list of happy tweets, a list of sad tweets, etc. All these lists are then gathered to form the training dataset. Once the model is trained, we can then apply it to classify tweets for which the emotion is not given.
 
 The whole question is how to get a training dataset ? Do we have to pay people to classify by hand the emotions of thousands of messages one by one ?
 
@@ -201,10 +201,10 @@ But I am pretty sure that some teams could manage to accurately predict more tha
 
 ### 4. Other ways to help
 
-I am an engineer, and I know almost nothing about depression. I tried to think about methods to counter depression from an engineering point of view, but they are not perfect, especially considering that <b>people might not want the social networks to control their feelings</b>. However, there are many specialists in the world that probably have better ideas on how to help depressed people online. They could probably come up with smarter ways to more directly help  people suffering from depression.
+I am an engineer, and I know almost nothing about depression. I tried to think about methods to counter depression from an engineering point of view, but they are not perfect, especially considering that <b>people might not want the social networks to control their feelings</b>. However, there are many specialists in the world that probably have better ideas on how to help depressed people online. They could probably come up with smarter ways to more directly help people suffering from depression.
 
 ## Conclusion
 
 I hope this article presents depression detection as easy, because it is actually very easy to create models that detect depression. The trickiest part, as an engineer, is to find the right thing to do in order to counter depression. And it is probably that point that would require the help of some specialists. But the technical part, at least, is easy to implement.
 
-For those of you who want more details, here is my master thesis : <i> unavailable at the moment </i>.
+For those of you who want more details, here is my master thesis : <a href="/assets/Project_MSC_Valentin_Chelle.pdf">Deep Learning For Emotion Analysis</a>.
