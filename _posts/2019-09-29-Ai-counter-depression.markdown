@@ -9,7 +9,7 @@ extract: A method to counter depression with deep learning models.
 time_to_read: 10 min
 ---
 
-> I have worked the past few months on analysing emotions with deep learning models in order to detect depression. I also elaborated some ways to counter depression on social networks when it is detected. This article aims to establish some methods that could be applied to detect and mitigate depression on social networks. I won't enter into details such as the coding because I want this article to be accessible for any type of background, since the importance here lies in people being aware of these techniques.
+> I have worked the past few months on analysing emotions with deep learning models in order to detect depression and I wrote my master thesis about it (link at the bottom of this article). I also elaborated some ways to counter depression on social networks when it is detected. This article aims to establish some methods that could be applied to detect and mitigate depression on social networks. I won't enter into details such as the coding because I want this article to be accessible for any type of background, since the importance here lies in people being aware of these techniques.
 
 ## The need to counter depression
 
@@ -89,7 +89,7 @@ To give you an idea, here are the classes of emotion I considered in my study :
 
 ### 2. Emotion Prediction
 
-The emotion prediction tries to predict the emotion of the next message of a user by considering the emotions of the few past messages of this user. This is an indicator of the user's mood on the short term.
+The emotion prediction tries to predict the emotion of the next message of a user by considering the emotions of the few past messages of this user. This is an indicator of the user's mood on the short term. Here are a few examples of what the system is supposed to give us for the given past emotions.
 
 <table>
 	<tr>
@@ -111,7 +111,7 @@ The emotion prediction tries to predict the emotion of the next message of a use
 	</tr>
 	<tr>
 		<td>
-			Neutral > Happy > Neutral
+			Fun > Happy > Neutral
 			</td>
 		<td>
 			Happy
@@ -134,7 +134,7 @@ The depression detector tries to detect whether or not a user is going through a
 	</tr>
 	<tr>
 		<td>
-			Sad > Neutral > Sad > Neutral > Worry > Worry
+			Happy > Love > Fun > Neutral > Happy > Neutral
 			</td>
 		<td>
 			Not Depressed
