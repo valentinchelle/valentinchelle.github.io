@@ -179,6 +179,12 @@ To answer this question, I chose to work on Twitter. Something really great abou
 	</tr>
 </table>
 
+Using these lists, I can now build my dataset. Let's say I want to generate a list of happy tweets using only the hashtag "#enjoy". I ask Twitter (via its API) to give the last tweets containing "#enjoy" and I collect all these tweets. I can do that for every other hashtags like "#enjoylife", "#relax", "#laugh", etc. That is how I get my list of happy tweets. Similarly I can do the same for every single emotions, and generate a list of sad tweets, worried tweets, etc.
+
+You might wonder : so you managed already to classify emotions since you are able to build a list of happy tweets. Yes I am able in a sense, but the rules defining a tweet as happy or sad are very simple, and work only with tweets containing the emoticons in my list. With that system I am not able to classify "I love you" for instance.
+
+I want my model to be better than me because I want it not to use fixed rules like this. Hence, from my list of labeled tweets, I remove emoticons and hashtags, so that my model won't have this information : it will have to understanding what the person is saying and not classify a tweet only based on emoticons and hashtags.
+
 ## Counter the Depression
 
 ![](/assets/feelingofjoy.svg)

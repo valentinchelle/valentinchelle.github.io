@@ -20,14 +20,14 @@
 
 title: Valentin Chelle
 firstname: Valentin
-text_under_title_homePage: I have spent the past ten years imagining, prototyping and producing new ideas. I have developed several projects and learnt a lot of things, see for yourself !
+text_under_title_homePage: I have spent the past ten years imagining, prototyping and producing new ideas.  I have developed several projects and learnt a lot of things !
 
 email: valentin.chelle at gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning Engineer, Web and App developer and Entrepreneur
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: valentinchelle
 github_username: valentinchelle
 
 # Build settings
