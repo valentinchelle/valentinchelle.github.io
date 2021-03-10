@@ -7,6 +7,11 @@
 ![minima theme preview](/screenshot.png)
 
 ## Installation
+```
+sudo gem install bundler
+bundle install
+bundle exec jekyll serve
+```
 
 Add this line to your Jekyll site's Gemfile:
 
