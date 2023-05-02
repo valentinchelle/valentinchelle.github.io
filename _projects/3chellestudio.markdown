@@ -5,7 +5,7 @@ short_description: App & Web Creation Agency
 date: "2019-09-29 11:17:20 -0700"
 categories: jekyll update
 thumbnail: chellestudiologo.jpg
-link: http://chellestudio.fr
+link: http://chelle.studio
 comments: false
 tags:
   - web
